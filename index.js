@@ -24,8 +24,8 @@ app.use("*", (req, res, next) => {
    next();
 })
 
-//mongoose.connect('mongodb+srv://user:Fl0lfDFcNHB7OVN8@cluster0.24mkr.mongodb.net/my_database', {useNewUrlParser:true, useUnifiedTopology: true});
-mongoose.connect('mongodb://localhost/my_database', {useNewUrlParser:true, useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://user:Fl0lfDFcNHB7OVN8@cluster0.24mkr.mongodb.net/my_database', {useNewUrlParser:true, useUnifiedTopology: true});
+//mongoose.connect('mongodb://localhost/my_database', {useNewUrlParser:true, useUnifiedTopology: true});
 
 let port = process.env.PORT;
 if(port == null || port == "") {
